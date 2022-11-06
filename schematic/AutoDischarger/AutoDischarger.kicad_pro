@@ -320,6 +320,14 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
+    ],
+    [
+      "7294720e-84fa-44e2-8e91-1fa25a9bb61d",
+      "Voltage Sense"
+    ],
+    [
+      "77bcabc8-1188-4d31-8dd6-5a41ab350454",
+      "Discharge Control"
     ]
   ],
   "text_variables": {}
