@@ -783,7 +783,6 @@
     )
   )
 
-
   (junction (at 197.485 132.715) (diameter 0) (color 0 0 0 0)
     (uuid 1e67c142-c42b-4fb1-97e7-5f260d4b024f)
   )
@@ -1424,11 +1423,15 @@
     (pin "1" (uuid 4820881a-c089-4751-a9dd-9ad5aa220f90))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x07") (at 216.535 130.175 0) (mirror x) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x07") (at 216.535 130.175 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 13f15df1-85d9-427e-adf4-63f682b8c906)
-    (property "Reference" "J2" (id 0) (at 216.535 117.3185 0))
-    (property "Value" "Balance Lead" (id 1) (at 216.535 120.0936 0))
+    (property "Reference" "J2" (id 0) (at 218.567 129.3403 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Balance Lead" (id 1) (at 218.567 131.8772 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
     (property "Footprint" "Connector_JST:JST_XH_B7B-XH-A_1x07_P2.50mm_Vertical" (id 2) (at 216.535 130.175 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2253,37 +2256,37 @@
       (reference "JP4") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/b3179e89-cad8-48ce-93ab-34954f0b69ac"
-      (reference "Q1") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q1") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/68325520-3143-4288-bd7a-829a3b59b5b1"
-      (reference "Q2") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q2") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/73b19b83-770c-4207-9dc3-0552baffc670"
-      (reference "Q3") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q3") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/ff6ac747-707b-4961-a102-563a11d935be"
-      (reference "Q4") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q4") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/208ec227-77c9-4feb-b025-6f61c0e27115"
-      (reference "Q5") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q5") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/5440c0b5-3780-40bc-a032-9b590edf50b4"
-      (reference "Q6") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q6") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/2d779771-b1ab-4fac-bd33-f70aa0cd8f0f"
-      (reference "Q7") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q7") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/472d0607-7da0-4976-b990-1a464a56da15"
-      (reference "Q8") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q8") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/dc895304-8464-4d89-85fc-c6a56738014e"
-      (reference "Q9") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q9") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/f39af658-5429-4804-a5c1-003f749136ca"
-      (reference "Q10") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q10") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/451eac64-965a-410c-b4e9-0f8cb31c7d32"
-      (reference "Q11") (unit 1) (value "2N7002_HAMR") (footprint "SamacSys_Parts:2N7002HAMR")
+      (reference "Q11") (unit 1) (value "2N7002_HAMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/15eb6ae6-6d8f-499f-a0b3-7ad0e61d54f9"
       (reference "R1") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
