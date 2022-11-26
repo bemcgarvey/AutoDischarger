@@ -2201,6 +2201,9 @@
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/2bfa11b7-5ed2-4182-ab54-a61018745d14"
       (reference "#PWR043") (unit 1) (value "GND") (footprint "")
     )
+    (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/46943683-906e-4cb9-823b-38cd21bc9fd9"
+      (reference "#PWR?") (unit 1) (value "+8V") (footprint "")
+    )
     (path "/cd8226e0-a6bc-45cd-9c50-e74e92e2c36b"
       (reference "C1") (unit 1) (value "1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
@@ -2249,10 +2252,10 @@
     (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/c661003b-8a81-4f9d-81a4-eb2b529c9a51"
       (reference "JP2") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels")
     )
-    (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/738fc290-5a1a-446c-a428-f4e245ea30fe"
+    (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/a3696820-e439-4889-8829-6aa1e83ed9dd"
       (reference "JP3") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels")
     )
-    (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/a3696820-e439-4889-8829-6aa1e83ed9dd"
+    (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/738fc290-5a1a-446c-a428-f4e245ea30fe"
       (reference "JP4") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels")
     )
     (path "/77bcabc8-1188-4d31-8dd6-5a41ab350454/b3179e89-cad8-48ce-93ab-34954f0b69ac"
