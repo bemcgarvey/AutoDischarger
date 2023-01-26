@@ -6,7 +6,7 @@
 
   (title_block
     (title "Lipo Auto Discharger/Balancer")
-    (date "2022-11-06")
+    (date "2023-01-25")
     (rev "1.0")
     (company "Quantum Embedded Systems")
   )
@@ -1818,10 +1818,10 @@
   (symbol (lib_id "Device:C") (at 167.005 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c84e2900-b7ec-460d-a445-a7a49231dc91)
-    (property "Reference" "C3" (id 0) (at 169.926 28.3015 0)
+    (property "Reference" "C3" (id 0) (at 169.926 28.3753 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100 nF" (id 1) (at 169.926 31.0766 0)
+    (property "Value" "100nF" (id 1) (at 169.926 30.9122 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 167.9702 33.02 0)
@@ -2265,7 +2265,7 @@
       (reference "C2") (unit 1) (value "10 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/c84e2900-b7ec-460d-a445-a7a49231dc91"
-      (reference "C3") (unit 1) (value "100 nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/7294720e-84fa-44e2-8e91-1fa25a9bb61d/4c49df8c-374e-4085-8ec3-1251865adf1a"
       (reference "C4") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
