@@ -1547,7 +1547,7 @@
   (symbol (lib_id "power:+8V") (at 122.555 57.785 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 46943683-906e-4cb9-823b-38cd21bc9fd9)
-    (property "Reference" "#PWR?" (id 0) (at 122.555 53.975 0)
+    (property "Reference" "#PWR0103" (id 0) (at 122.555 53.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+8V" (id 1) (at 122.555 62.2284 0))
