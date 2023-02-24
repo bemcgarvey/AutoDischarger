@@ -5,11 +5,18 @@ enum {
     STORAGE_MODE = 0, BALANCE_MODE = 1
 } mode;
 
+double targetVoltage;
+double lowestCell;
+
+void powerOff(void);
+void buttonPressed(void);
+
 void main(void) {
     int seconds = 0;
     bool allDone;
-    mode = STORAGE_MODE;
+    mode = BALANCE_MODE;
     SYSTEM_Initialize();
+    INT0_SetInterruptHandler(buttonPressed);
     LED_SetLow();
     SHDN_SetLow();
     allCellsOff();
@@ -22,31 +29,36 @@ void main(void) {
             break;
         }
     }
+    lowestCell = 5.0;
+    for (int i = 0; i < numCells; ++i) {
+        if (cellVoltages[i] < lowestCell) {
+            lowestCell = cellVoltages[i];
+        }
+    }
+    targetVoltage = lowestCell;
     printf("Starting %d cells\r\n", numCells);
+    printf("Low cell = %.3f\r\n", lowestCell);
+    INTERRUPT_GlobalInterruptHighEnable();
     while (1) {
         if (seconds == 0) {
             allCellsOff();
             __delay_ms(50);
             getCellVoltages();
             for (int i = 0; i < numCells; ++i) {
-                printf("%.2f ", cellVoltages[i]);
+                printf("%.3f ", cellVoltages[i]);
             }
-            printf("\r\n");
+            printf("target = %.3f\r\n", targetVoltage);
             allDone = true;
             for (int i = 0; i < numCells; ++i) {
-                if (cellVoltages[i] > STORAGE_VOLTAGE) {
+                if (cellVoltages[i] > targetVoltage) {
                     cellDischargeOn(i);
                     allDone = false;
                 }
             }
         }
         if (allDone) {
-            //TODO put all this in a function void powerOff()
             allCellsOff();
-            //TODO configure for lowest power:
-            // ADC off, VREG at lowest power, LED off, OPAMPs off, UART off
-            // Internal oscillator to low freq?
-            // Should analog inputs be switched to outputs and grounded?
+            powerOff();
             INTERRUPT_GlobalInterruptHighDisable();
             Sleep();
             Nop();
@@ -55,14 +67,43 @@ void main(void) {
                 __delay_ms(100);
             }
         }
-        LED_Toggle();
-        __delay_ms(1000);
+        if (mode == STORAGE_MODE) {
+            LED_Toggle();
+            __delay_ms(1000);
+        } else if (mode == BALANCE_MODE) {
+            LED_SetHigh();
+            __delay_ms(100);
+            LED_SetLow();
+            __delay_ms(100);
+            LED_SetHigh();
+            __delay_ms(100);
+            LED_SetLow();
+            __delay_ms(700);
+        }
         ++seconds;
         if (seconds == 60) {
             seconds = 0;
         }
     }
 }
-/**
- End of File
- */
+
+void powerOff(void) {
+    LED_SetLow();
+    SHDN_SetHigh();
+    ADCON0bits.ADON = 0;
+    U1CON1bits.ON = 0;
+    VREGCON = 0b10;
+    //Switch to LFINTOSC?
+    //Make analog inputs outputs and set to gnd?
+}
+
+void buttonPressed(void) {
+    __delay_ms(50);
+    if (mode == STORAGE_MODE) {
+        mode = BALANCE_MODE;
+        targetVoltage = lowestCell;
+    } else if (mode == BALANCE_MODE) {
+        mode = STORAGE_MODE;
+        targetVoltage = STORAGE_VOLTAGE;
+    }
+}
