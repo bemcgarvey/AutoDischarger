@@ -23,10 +23,6 @@ void main(void) {
         }
     }
     printf("Starting %d cells\r\n", numCells);
-    for (int i = 0; i < 6; ++i) {
-        printf("%.2f ", cellVoltages[i]);
-    }
-    printf("\r\n");
     while (1) {
         if (seconds == 0) {
             allCellsOff();
@@ -45,9 +41,15 @@ void main(void) {
             }
         }
         if (allDone) {
+            //TODO put all this in a function void powerOff()
             allCellsOff();
-            //TODO turn everything off and go to sleep
-            // use button to wake up.
+            //TODO configure for lowest power:
+            // ADC off, VREG at lowest power, LED off, OPAMPs off, UART off
+            // Internal oscillator to low freq?
+            // Should analog inputs be switched to outputs and grounded?
+            INTERRUPT_GlobalInterruptHighDisable();
+            Sleep();
+            Nop();
             while (1) {
                 LED_Toggle();
                 __delay_ms(100);

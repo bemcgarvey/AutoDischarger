@@ -69,6 +69,8 @@ void  INTERRUPT_Initialize (void)
 
     GIE = state;
 
+    // Assign peripheral interrupt priority vectors
+    IPR1bits.INT0IP = 1;
 }
 
 void __interrupt(irq(default),base(8)) Default_ISR()

@@ -54,6 +54,7 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     ADCC_Initialize();
+    EXT_INT_Initialize();
     UART1_Initialize();
 }
 
