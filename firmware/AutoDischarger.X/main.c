@@ -5,15 +5,16 @@ enum {
     STORAGE_MODE = 0, BALANCE_MODE = 1
 } mode;
 
-double targetVoltage;
-double lowestCell;
+bool modeChange = false;
 
 void powerOff(void);
 void buttonPressed(void);
 
 void main(void) {
-    int seconds = 0;
-    bool allDone;
+    double targetVoltage;
+    double lowestCell;
+    uint8_t allDoneCount = 0;
+    uint8_t seconds = 0;
     mode = BALANCE_MODE;
     SYSTEM_Initialize();
     INT0_SetInterruptHandler(buttonPressed);
@@ -40,6 +41,24 @@ void main(void) {
     printf("Low cell = %.3f\r\n", lowestCell);
     INTERRUPT_GlobalInterruptHighEnable();
     while (1) {
+        if (modeChange) {
+            modeChange = false;
+            seconds = 0;
+            if (mode == STORAGE_MODE) {
+                targetVoltage = STORAGE_VOLTAGE;
+            } else if (mode == BALANCE_MODE) {
+                allCellsOff();
+                __delay_ms(50);
+                getCellVoltages();
+                lowestCell = 5.0;
+                for (int i = 0; i < numCells; ++i) {
+                    if (cellVoltages[i] < lowestCell) {
+                        lowestCell = cellVoltages[i];
+                    }
+                }
+                targetVoltage = lowestCell;
+            }
+        }
         if (seconds == 0) {
             allCellsOff();
             __delay_ms(50);
@@ -48,23 +67,24 @@ void main(void) {
                 printf("%.3f ", cellVoltages[i]);
             }
             printf("target = %.3f\r\n", targetVoltage);
-            allDone = true;
+            ++allDoneCount;
             for (int i = 0; i < numCells; ++i) {
                 if (cellVoltages[i] > targetVoltage) {
                     cellDischargeOn(i);
-                    allDone = false;
+                    allDoneCount = 0;
                 }
             }
-        }
-        if (allDone) {
-            allCellsOff();
-            powerOff();
-            INTERRUPT_GlobalInterruptHighDisable();
-            Sleep();
-            Nop();
-            while (1) {
-                LED_Toggle();
-                __delay_ms(100);
+            if (allDoneCount >= FINISH_COUNT) {
+                //All done
+                allCellsOff();
+                powerOff();
+                INTERRUPT_GlobalInterruptHighDisable();
+                Sleep();
+                Nop();
+                while (1) {
+                    LED_Toggle();
+                    __delay_ms(100);
+                }
             }
         }
         if (mode == STORAGE_MODE) {
@@ -81,7 +101,7 @@ void main(void) {
             __delay_ms(700);
         }
         ++seconds;
-        if (seconds == 60) {
+        if (seconds >= DISCHARGE_TIME) {
             seconds = 0;
         }
     }
@@ -94,16 +114,16 @@ void powerOff(void) {
     U1CON1bits.ON = 0;
     VREGCON = 0b10;
     //Switch to LFINTOSC?
-    //Make analog inputs outputs and set to gnd?
 }
 
 void buttonPressed(void) {
     __delay_ms(50);
-    if (mode == STORAGE_MODE) {
-        mode = BALANCE_MODE;
-        targetVoltage = lowestCell;
-    } else if (mode == BALANCE_MODE) {
-        mode = STORAGE_MODE;
-        targetVoltage = STORAGE_VOLTAGE;
+    if (Button_GetValue() == 0) {
+        modeChange = true;
+        if (mode == STORAGE_MODE) {
+            mode = BALANCE_MODE;
+        } else if (mode == BALANCE_MODE) {
+            mode = STORAGE_MODE;
+        }
     }
 }
