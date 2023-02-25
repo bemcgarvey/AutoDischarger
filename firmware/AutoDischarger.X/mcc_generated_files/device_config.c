@@ -54,7 +54,7 @@
 #pragma config CLKOUTEN = OFF    // Clock out Enable bit->CLKOUT function is disabled
 #pragma config PR1WAY = ON    // PRLOCKED One-Way Set Enable bit->PRLOCKED bit can be cleared and set only once
 #pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
-#pragma config FCMEN = ON    // Fail-Safe Clock Monitor Enable bit->Fail-Safe Clock Monitor enabled
+#pragma config FCMEN = OFF    // Fail-Safe Clock Monitor Enable bit->Fail-Safe Clock Monitor disabled
 #pragma config FCMENP = ON    // Fail-Safe Clock Monitor - Primary XTAL Enable bit->Fail-Safe Clock Monitor enabled; timer will flag FSCMP bit and OSFIF interrupt on EXTOSC failure.
 #pragma config FCMENS = ON    // Fail-Safe Clock Monitor - Secondary XTAL Enable bit->Fail-Safe Clock Monitor enabled; timer will flag FSCMP bit and OSFIF interrupt on SOSC failure.
 
@@ -64,7 +64,7 @@
 #pragma config MVECEN = ON    // Multi-vector enable bit->Multi-vector enabled, Vector table used for interrupts
 #pragma config IVT1WAY = ON    // IVTLOCK bit One-way set enable bit->IVTLOCKED bit can be cleared and set only once
 #pragma config LPBOREN = OFF    // Low Power BOR Enable bit->Low-Power BOR disabled
-#pragma config BOREN = SBORDIS    // Brown-out Reset Enable bits->Brown-out Reset enabled , SBOREN bit is ignored
+#pragma config BOREN = OFF    // Brown-out Reset Enable bits->Brown-out Reset disabled
 
 // CONFIG4
 #pragma config BORV = VBOR_1P9    // Brown-out Reset Voltage Selection bits->Brown-out Reset Voltage (VBOR) set to 1.9V
@@ -75,12 +75,12 @@
 #pragma config XINST = OFF    // Extended Instruction Set Enable bit->Extended Instruction Set and Indexed Addressing Mode disabled
 
 // CONFIG5
-#pragma config WDTCPS = WDTCPS_31    // WDT Period selection bits->Divider ratio 1:65536; software control of WDTPS
-#pragma config WDTE = OFF    // WDT operating mode->WDT Disabled; SWDTEN is ignored
+#pragma config WDTCPS = WDTCPS_12    // WDT Period selection bits->Divider ratio 1:131072
+#pragma config WDTE = NSLEEP    // WDT operating mode->WDT enabled while sleep=0, suspended when sleep=1; SWDTEN ignored
 
 // CONFIG6
 #pragma config WDTCWS = WDTCWS_7    // WDT Window Select bits->window always open (100%); software control; keyed access not required
-#pragma config WDTCCS = SC    // WDT input clock selector->Software Control
+#pragma config WDTCCS = LFINTOSC    // WDT input clock selector->WDT reference clock is the 31.0 kHz LFINTOSC
 
 // CONFIG7
 #pragma config BBSIZE = BBSIZE_512    // Boot Block Size selection bits->Boot Block size is 512 words

@@ -6228,51 +6228,51 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD0"/>
-         <value>0</value>
+         <value>123</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD1"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD2"/>
-         <value>0</value>
+         <value>125</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD3"/>
-         <value>0</value>
+         <value>191</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD4"/>
-         <value>0</value>
+         <value>254</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PMD" registerAlias="PMD5"/>
-         <value>0</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="CLKRMD"/>
-         <value>CLKR enabled</value>
+         <value>CLKR disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="CRCMD"/>
-         <value>CRC enabled</value>
+         <value>CRC disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="FVRMD"/>
-         <value>FVR enabled</value>
+         <value>FVR disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="IOCMD"/>
-         <value>IOC enabled</value>
+         <value>IOC disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="LVDMD"/>
-         <value>HLVD enabled</value>
+         <value>HLVD disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="SCANMD"/>
-         <value>SCANNER enabled</value>
+         <value>SCANNER disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD0" settingAlias="SYSCMD"/>
@@ -6280,39 +6280,39 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="CM1MD"/>
-         <value>CM1 enabled</value>
+         <value>CM1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="SMT1MD"/>
-         <value>SMT1 enabled</value>
+         <value>SMT1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="TMR0MD"/>
-         <value>TMR0 enabled</value>
+         <value>TMR0 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="TMR1MD"/>
-         <value>TMR1 enabled</value>
+         <value>TMR1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="TMR2MD"/>
-         <value>TMR2 enabled</value>
+         <value>TMR2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="TMR3MD"/>
-         <value>TMR3 enabled</value>
+         <value>TMR3 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="TMR4MD"/>
-         <value>TMR4 enabled</value>
+         <value>TMR4 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD1" settingAlias="ZCDMD"/>
-         <value>ZCD enabled</value>
+         <value>ZCD disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="ACTMD"/>
-         <value>ACT enabled</value>
+         <value>ACT disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="ADCMD"/>
@@ -6320,47 +6320,47 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="CM2MD"/>
-         <value>CM2 enabled</value>
+         <value>CM2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="CWG1MD"/>
-         <value>CWG1 enabled</value>
+         <value>CWG1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="DAC1MD"/>
-         <value>DAC1 enabled</value>
+         <value>DAC1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="DSM1MD"/>
-         <value>DSM enabled</value>
+         <value>DSM disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD2" settingAlias="NCO1MD"/>
-         <value>NCO1 enabled</value>
+         <value>NCO1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="I2C1MD"/>
-         <value>I2C1 enabled</value>
+         <value>I2C1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="PWM1MD"/>
-         <value>PWM1 enabled</value>
+         <value>PWM1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="PWM2MD"/>
-         <value>PWM2 enabled</value>
+         <value>PWM2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="PWM3MD"/>
-         <value>PWM3 enabled</value>
+         <value>PWM3 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="SPI1MD"/>
-         <value>SPI1 enabled</value>
+         <value>SPI1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="SPI2MD"/>
-         <value>SPI2 enabled</value>
+         <value>SPI2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="UART1MD"/>
@@ -6368,46 +6368,46 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="UART2MD"/>
-         <value>UART2 enabled</value>
+         <value>UART2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="CLC1MD"/>
-         <value>CLC1 enabled</value>
+         <value>CLC1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="CLC2MD"/>
-         <value>CLC2 enabled</value>
+         <value>CLC2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="CLC3MD"/>
-         <value>CLC3 enabled</value>
+         <value>CLC3 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="CLC4MD"/>
-         <value>CLC4 enabled</value>
+         <value>CLC4 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="DMA1MD"/>
-         <value>DMA1 enabled</value>
+         <value>DMA1 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="DMA2MD"/>
-         <value>DMA2 enabled</value>
+         <value>DMA2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD4" settingAlias="DMA3MD"/>
-         <value>DMA3 enabled</value>
+         <value>DMA3 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD5" settingAlias="DAC2MD"/>
-         <value>DAC2 enabled</value>
+         <value>DAC2 disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD5" settingAlias="DMA4MD"/>
-         <value>DMA4 enabled</value>
+         <value>DMA4 disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ADACTPPS%aux4"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ADACTPPS%aux0"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
@@ -6476,22 +6476,22 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RC6"/>
-         <value>Button</value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RC7"/>
          <value>LED</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT0PPS%aux0"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT0PPS%aux1"/>
          <value>22</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT1PPS%aux1"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT1PPS%aux2"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT2PPS%aux2"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="INT2PPS%aux3"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
@@ -6571,7 +6571,7 @@
          <value>output</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="U1CTSPPS%aux3"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="U1CTSPPS%aux4"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
@@ -6708,7 +6708,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RC6"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RC7"/>
@@ -10248,11 +10248,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG2"/>
-         <value>235</value>
+         <value>203</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG3"/>
-         <value>255</value>
+         <value>63</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG4"/>
@@ -10260,11 +10260,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG5"/>
-         <value>31</value>
+         <value>76</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG6"/>
-         <value>63</value>
+         <value>7</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG7"/>
@@ -10296,7 +10296,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG2" settingAlias="FCMEN"/>
-         <value>ON</value>
+         <value>OFF</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG2" settingAlias="FCMENP"/>
@@ -10312,7 +10312,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG3" settingAlias="BOREN"/>
-         <value>SBORDIS</value>
+         <value>OFF</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG3" settingAlias="IVT1WAY"/>
@@ -10360,15 +10360,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG5" settingAlias="WDTCPS"/>
-         <value>WDTCPS_31</value>
+         <value>WDTCPS_12</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG5" settingAlias="WDTE"/>
-         <value>OFF</value>
+         <value>NSLEEP</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG6" settingAlias="WDTCCS"/>
-         <value>SC</value>
+         <value>LFINTOSC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG6" settingAlias="WDTCWS"/>
@@ -11268,7 +11268,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WWDT" name="wwdtPeriod"/>
-         <value>2.11406</value>
+         <value>4.22813</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="WWDT" registerAlias="PCON" settingAlias="nRWDT" alias="WDT reset has not occurred"/>
@@ -11451,54 +11451,30 @@
          <value>Window delay time 87.5%</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
-      <entry>
-         <file>mcc_generated_files\ext_int.c</file>
-         <hash>12d04a2215ca28063dffea241099a7ca72b708bb27a7e66edb67e98d227d3973</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>3f3c51266403a42e030e1a2bc154bfeb7cda681cf7e2169299398c9e1f962b2c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>3ba0cfa930e881c26a33c30d9084e8a48e7157553da992cde1df1b80e9aac496</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>764af0830a09932b5aa1d950f357798a6f7988883e715f6f936c7a99e9a566a9</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\uart1.h</file>
-         <hash>4c880150e8d48e39ae7e5165c8ce446a97ba5a0057715c49774d0d03f7ffc499</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\uart1.c</file>
-         <hash>34d8917d6e06e9a15891ca2962542b1e7540a49dc39b919f33f43e1a658f2f77</hash>
-      </entry>
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
          <file>main.c</file>
          <hash>8967efb959fca41f6f5012c4fe49e418e8435b3305c2bed5600588b46cdcaf76</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>eef15f4f49ac8fc981511d03db7e662f29523a5cbe5ca8de1abfce778034e689</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>4fbb3b214ab4388aebb82beaa15235e621fe6b9b967ad1c7ac5366cc43554fda</hash>
+         <file>mcc_generated_files\adcc.c</file>
+         <hash>2e69f789acc349097ed3e5678051c9078722428355cd2adff888c9cb30dfcf68</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adcc.h</file>
          <hash>6417a46f19cf690d57ec419eb764960ac00e28480e0fc08a7bd220103d77cdfd</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>48722844381f6f0cbcb809eca160ce201258c0b8b69cfbe2acb59460d882f6a9</hash>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>994523ee6198ed619f0c44f00b9af1b6550b23bbd90ee8d710b1ea175bd95ae7</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\adcc.c</file>
-         <hash>2e69f789acc349097ed3e5678051c9078722428355cd2adff888c9cb30dfcf68</hash>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>764af0830a09932b5aa1d950f357798a6f7988883e715f6f936c7a99e9a566a9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ext_int.c</file>
+         <hash>12d04a2215ca28063dffea241099a7ca72b708bb27a7e66edb67e98d227d3973</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ext_int.h</file>
@@ -11509,8 +11485,32 @@
          <hash>714d6fe1ad5b4a2f188bd82bce43193fc12a0112bf0a8a8a5c044feebea0ade9</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>3f3c51266403a42e030e1a2bc154bfeb7cda681cf7e2169299398c9e1f962b2c</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>92952108e526e2ad82acf6ff0f17dc5cbd1047db4ea4a8cd7b288cec8be896f9</hash>
+         <hash>40103b92c33eba785a24b2e3568e4f9792d6056654edc8a53280aec404345585</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>00fcd7f60991dea229f003d524f799377fdc071823a12767bd19ffd47e973f84</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>48722844381f6f0cbcb809eca160ce201258c0b8b69cfbe2acb59460d882f6a9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>e41aa13ce42e463ea9cf7a96dbedaf3e0c63b75b4e1229a112c6b40b773a13cc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.c</file>
+         <hash>34d8917d6e06e9a15891ca2962542b1e7540a49dc39b919f33f43e1a658f2f77</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.h</file>
+         <hash>4c880150e8d48e39ae7e5165c8ce446a97ba5a0057715c49774d0d03f7ffc499</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

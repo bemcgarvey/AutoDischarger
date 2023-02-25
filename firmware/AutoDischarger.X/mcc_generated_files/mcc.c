@@ -76,18 +76,18 @@ void OSCILLATOR_Initialize(void)
 
 void PMD_Initialize(void)
 {
-    // CLKRMD CLKR enabled; SYSCMD SYSCLK enabled; SCANMD SCANNER enabled; LVDMD HLVD enabled; FVRMD FVR enabled; IOCMD IOC enabled; CRCMD CRC enabled; 
-    PMD0 = 0x00;
-    // ZCDMD ZCD enabled; TMR0MD TMR0 enabled; TMR1MD TMR1 enabled; TMR4MD TMR4 enabled; SMT1MD SMT1 enabled; TMR2MD TMR2 enabled; TMR3MD TMR3 enabled; CM1MD CM1 enabled; 
-    PMD1 = 0x00;
-    // NCO1MD NCO1 enabled; ADCMD ADC enabled; DSM1MD DSM enabled; CWG1MD CWG1 enabled; ACTMD ACT enabled; CM2MD CM2 enabled; DAC1MD DAC1 enabled; 
-    PMD2 = 0x00;
-    // PWM2MD PWM2 enabled; PWM1MD PWM1 enabled; PWM3MD PWM3 enabled; SPI2MD SPI2 enabled; SPI1MD SPI1 enabled; U2MD UART2 enabled; U1MD UART1 enabled; I2C1MD I2C1 enabled; 
-    PMD3 = 0x00;
-    // CLC3MD CLC3 enabled; CLC4MD CLC4 enabled; DMA1MD DMA1 enabled; DMA2MD DMA2 enabled; DMA3MD DMA3 enabled; CLC1MD CLC1 enabled; CLC2MD CLC2 enabled; 
-    PMD4 = 0x00;
-    // DMA4MD DMA4 enabled; DAC2MD DAC2 enabled; 
-    PMD5 = 0x00;
+    // CLKRMD CLKR disabled; SYSCMD SYSCLK enabled; SCANMD SCANNER disabled; LVDMD HLVD disabled; FVRMD FVR disabled; IOCMD IOC disabled; CRCMD CRC disabled; 
+    PMD0 = 0x7B;
+    // ZCDMD ZCD disabled; TMR0MD TMR0 disabled; TMR1MD TMR1 disabled; TMR4MD TMR4 disabled; SMT1MD SMT1 disabled; TMR2MD TMR2 disabled; TMR3MD TMR3 disabled; CM1MD CM1 disabled; 
+    PMD1 = 0xFF;
+    // NCO1MD NCO1 disabled; ADCMD ADC enabled; DSM1MD DSM disabled; CWG1MD CWG1 disabled; ACTMD ACT disabled; CM2MD CM2 disabled; DAC1MD DAC1 disabled; 
+    PMD2 = 0xFD;
+    // PWM2MD PWM2 disabled; PWM1MD PWM1 disabled; PWM3MD PWM3 disabled; SPI2MD SPI2 disabled; SPI1MD SPI1 disabled; U2MD UART2 disabled; U1MD UART1 enabled; I2C1MD I2C1 disabled; 
+    PMD3 = 0xBF;
+    // CLC3MD CLC3 disabled; CLC4MD CLC4 disabled; DMA1MD DMA1 disabled; DMA2MD DMA2 disabled; DMA3MD DMA3 disabled; CLC1MD CLC1 disabled; CLC2MD CLC2 disabled; 
+    PMD4 = 0xFF;
+    // DMA4MD DMA4 disabled; DAC2MD DAC2 disabled; 
+    PMD5 = 0x03;
 }
 
 

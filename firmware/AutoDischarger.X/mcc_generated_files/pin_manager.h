@@ -349,25 +349,17 @@
 #define C3_SetAnalogMode()      do { ANSELCbits.ANSELC5 = 1; } while(0)
 #define C3_SetDigitalMode()     do { ANSELCbits.ANSELC5 = 0; } while(0)
 
-// get/set Button aliases
-#define Button_TRIS                 TRISCbits.TRISC6
-#define Button_LAT                  LATCbits.LATC6
-#define Button_PORT                 PORTCbits.RC6
-#define Button_WPU                  WPUCbits.WPUC6
-#define Button_OD                   ODCONCbits.ODCC6
-#define Button_ANS                  ANSELCbits.ANSELC6
-#define Button_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
-#define Button_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
-#define Button_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
-#define Button_GetValue()           PORTCbits.RC6
-#define Button_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
-#define Button_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
-#define Button_SetPullup()          do { WPUCbits.WPUC6 = 1; } while(0)
-#define Button_ResetPullup()        do { WPUCbits.WPUC6 = 0; } while(0)
-#define Button_SetPushPull()        do { ODCONCbits.ODCC6 = 0; } while(0)
-#define Button_SetOpenDrain()       do { ODCONCbits.ODCC6 = 1; } while(0)
-#define Button_SetAnalogMode()      do { ANSELCbits.ANSELC6 = 1; } while(0)
-#define Button_SetDigitalMode()     do { ANSELCbits.ANSELC6 = 0; } while(0)
+// get/set RC6 procedures
+#define RC6_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
+#define RC6_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
+#define RC6_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
+#define RC6_GetValue()              PORTCbits.RC6
+#define RC6_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
+#define RC6_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
+#define RC6_SetPullup()             do { WPUCbits.WPUC6 = 1; } while(0)
+#define RC6_ResetPullup()           do { WPUCbits.WPUC6 = 0; } while(0)
+#define RC6_SetAnalogMode()         do { ANSELCbits.ANSELC6 = 1; } while(0)
+#define RC6_SetDigitalMode()        do { ANSELCbits.ANSELC6 = 0; } while(0)
 
 // get/set LED aliases
 #define LED_TRIS                 TRISCbits.TRISC7

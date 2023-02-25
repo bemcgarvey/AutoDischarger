@@ -21,6 +21,17 @@ void main(void) {
     LED_SetLow();
     SHDN_SetLow();
     allCellsOff();
+    if (PCON0bits.RWDT == 0) { //Check for WDT reset
+        powerOff();
+        Sleep();
+        Nop();
+        while (1) {
+            LED_Toggle();
+            __delay_us(100);  //This is actually 100ms since clock is now slower
+            ClrWdt();
+        }
+    }
+    PCON0bits.RWDT = 1;
     numCells = MAX_CELLS;
     __delay_ms(500);
     getCellVoltages();
@@ -81,9 +92,10 @@ void main(void) {
                 INTERRUPT_GlobalInterruptHighDisable();
                 Sleep();
                 Nop();
+                LED_SetHigh();
                 while (1) {
-                    LED_Toggle();
-                    __delay_ms(100);
+                    __delay_us(1000); //Actually 1s
+                    ClrWdt();
                 }
             }
         }
@@ -104,21 +116,26 @@ void main(void) {
         if (seconds >= DISCHARGE_TIME) {
             seconds = 0;
         }
+        ClrWdt();
     }
 }
 
 void powerOff(void) {
+    allCellsOff();
     LED_SetLow();
     SHDN_SetHigh();
     ADCON0bits.ADON = 0;
     U1CON1bits.ON = 0;
+    PMD3bits.U1MD = 1;  //Disable UART1 and ADC
+    PMD2bits.ADCMD = 1;
     VREGCON = 0b10;
-    //Switch to LFINTOSC?
+    OSCCON1bits.NOSC = 0b101;  //Switch to LFINTOSC
+    while (OSCCON3bits.ORDY != 1);
 }
 
 void buttonPressed(void) {
     __delay_ms(50);
-    if (Button_GetValue() == 0) {
+    if (PORTCbits.RC6 == 0) {
         modeChange = true;
         if (mode == STORAGE_MODE) {
             mode = BALANCE_MODE;
