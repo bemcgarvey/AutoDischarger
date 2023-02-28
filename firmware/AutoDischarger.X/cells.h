@@ -16,6 +16,8 @@ extern "C" {
 #define STORAGE_VOLTAGE 3.85
 #define DISCHARGE_TIME  30  //number of seconds per discharge interval
 #define FINISH_COUNT    4  //Number of discharge intervals to finish 4 * 30 = 2 minutes
+#define MIN_CELL_VOLTAGE    3.0
+#define MAX_CELL_VOLTAGE    4.3
     
     extern int numCells;
     extern double cellVoltages[MAX_CELLS];
