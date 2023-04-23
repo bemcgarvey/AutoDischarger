@@ -4,9 +4,8 @@
 int numCells = 0;
 double cellVoltages[MAX_CELLS];
 
-//TODO is the correction to cell 3 required for every unit or is it
-// specific to this one?
-double cellCalibration[MAX_CELLS] = {0.0, 0.0, 0.04, 0.0, 0.0, 0.0};
+//Set calibration values for each board
+double cellCalibration[MAX_CELLS] = {0.0, 0.019, -0.053, 0.0, 0.0, 0.0};
 
 static const adcc_channel_t adcChannels[] = {VSense1, VSense2, VSense3, VSense4, VSense5, VSense6};
 

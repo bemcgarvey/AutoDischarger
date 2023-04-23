@@ -7,6 +7,7 @@ enum {
 } mode;
 
 bool modeChange = false;
+bool activeCells[MAX_CELLS];
 
 void powerOff(void);
 void buttonPressed(void);
@@ -45,6 +46,9 @@ void main(void) {
         }
     }
     targetVoltage = lowestCell;
+    for (int i = 0; i < MAX_CELLS; ++i) {
+        activeCells[i] = false;
+    }
     printf("Starting firmware version %s\r\n", VERSION);
     printf("%d cells\r\n", numCells);
     printf("Low cell = %.3f\r\n", lowestCell);
@@ -86,13 +90,24 @@ void main(void) {
             ++allDoneCount;
             for (int i = 0; i < numCells; ++i) {
                 if (cellVoltages[i] > targetVoltage) {
-                    cellDischargeOn(i);
+                    activeCells[i] = true;
                     allDoneCount = 0;
+                } else {
+                    activeCells[i] = false;
                 }
             }
             if (allDoneCount >= FINISH_COUNT) {
                 terminateNormal();
             }
+        }
+        if (seconds % 2 == 0) {
+            for (int i = 0; i < numCells; ++i) {
+                if (activeCells[i]) {
+                    cellDischargeOn(i);
+                }
+            }
+        } else {
+            allCellsOff();
         }
         if (mode == STORAGE_MODE) {
             LED_Toggle();
